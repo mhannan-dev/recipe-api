@@ -1,44 +1,15 @@
-# Python artifacts
-*.pyc
-*.pyo
-*.pyd
-
-
-# Virtual environments
-.venv/
-
-.venv
-
-# Environment variables
-.env
-.env.*
-
-# Django-specific
-db.sqlite3
-/media/
-
-# Node.js dependencies
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Logs and temporary files
-*.log
-*.out
-*.tmp
-*.bak
-*.old
-
-# Other
-.git/
+# Git
+.git
 .gitignore
+
+# Docker
+.docker
+
+# Python
+app/__pycache__/
+app/*/__pycache__/
+app/*/*/__pycache__/
+app/*/*/*/__pycache__/
+.env/
+.venv/
+venv/
