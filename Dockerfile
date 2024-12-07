@@ -13,7 +13,7 @@ WORKDIR /app
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 COPY ./scripts /scripts
-COPY . /app
+COPY ./app /app
 
 ARG DEV=true
 
