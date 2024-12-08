@@ -1,15 +1,44 @@
-# Git
-.git
-.gitignore
-
-# Docker
-.docker
-
-# Python
+# Python artifacts
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
 app/__pycache__/
-app/*/__pycache__/
-app/*/*/__pycache__/
-app/*/*/*/__pycache__/
-.env/
+*.pytest_cache
+
+# Virtual environments
 .venv/
-venv/
+
+# Environment variables
+.env
+.env.*
+
+# Django-specific
+db.sqlite3
+/media/
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.out
+*.tmp
+*.bak
+*.old
+
+# Other
+.git/
+.gitignore
