@@ -1,5 +1,5 @@
 """
-ASGI config for recipe project.
+ASGI config for rc_final_prj project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'recipe.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'rc_final_prj.settings')
 
 application = get_asgi_application()

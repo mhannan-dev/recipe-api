@@ -1,5 +1,5 @@
 """
-WSGI config for recipe project.
+WSGI config for rc_final_prj project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'recipe.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'rc_final_prj.settings')
 
 application = get_wsgi_application()
