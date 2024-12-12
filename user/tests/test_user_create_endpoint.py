@@ -9,11 +9,11 @@ class UserCreateEndpointTest(TestCase):
     def setUp(self):
         # Initialize the API client
         self.client = APIClient()
-        self.url = reverse('user-create')  # Replace 'user-create' with the actual name of your endpoint
+        self.url = reverse('user-create')
         self.valid_payload = {
             'username': 'testuser',
-            'password': 'strongpassword123',
-            'email': 'testuser@example.com',
+            'password': 'Test@1234',
+            'email': 'testuser@yopmail.com',
         }
         self.invalid_payload = {
             'username': '',  # Invalid as username is required
@@ -27,7 +27,7 @@ class UserCreateEndpointTest(TestCase):
 
         # Assert the response status and data
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-        self.assertIn('id', response.data)  # Assuming the response contains the created user's ID
+        self.assertIn('id', response.data)
 
         # Assert the user was created in the database
         user = User.objects.get(username=self.valid_payload['username'])

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'core',
     'rest_framework',
     'drf_spectacular',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +134,5 @@ AUTH_USER_MODEL = 'core.User'
 
 
 REST_FRAMEWORK = {
-    # YOUR SETTINGS
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
